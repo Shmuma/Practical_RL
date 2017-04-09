@@ -109,17 +109,23 @@ Taught on-campus in [HSE](https://cs.hse.ru) and [Yandex SDA](https://yandexdata
  * Lecture: Motivation for policy-based, policy gradient, logderivative trick, REINFORCE/crossentropy method, variance theorem(advantage), advantage actor-critic (incl.n-step advantage)
  * Seminar: REINFORCE manually, advantage actor-critic for MountainCar  - [week6/README.md](https://github.com/yandexdataschool/Practical_RL/blob/master/week6/README.md)
     * HSE homework deadline _23.59 2.04.17_
+    * YSDA deadline _23.59 6.04.2017_
     
 * __week6.5__ RNN recap
  * Lecture: recurrent neura networks for sequences. GRU/LSTM. Gradient clipping. Seq2seq
  * Seminar: char-rnn and simple seq2seq
     * HSE homework deadline __23.59 5.04.17__
-
-## Future lectures:
+    * YSDA deadline _23.59 9.04.2017_
 
 * __week7__ Partially observable MDPs (under construction now, on-campus 3-6.04.2017)
  * Lecture: POMDP intro. Model-based solvers. RNN solvers. RNN tricks: attention, problems with normalization methods, pre-training.
- * Seminar: Deep kung-fu & doom with recurrent A3C vs feedforward A3C
+ * Seminar: Deep kung-fu & doom with recurrent A3C and DRQN
+    * HSE homework deadline _23.59 16.04.17_ (kung fu assignment is worth 6pts isntead of 3)
+    * HSE homework deadline _23.59 19.04.17_
+    
+
+## Future lectures:
+
 
 * __week 8__ Case studies 1 (approx 10.04.17)
  * Lecture: Reinforcement Learning as a general way to optimize non-differentiable loss. Seq2seq tasks: g2p, machine translation, conversation models. Tricks for seq2seq models. KL(p||q) vs KL(q||p) and generative adversarial nets.
