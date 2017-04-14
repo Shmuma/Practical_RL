@@ -58,12 +58,16 @@ class QLearningAgent(ReinforcementAgent):
     possibleActions = self.getLegalActions(state)
     #If there are no legal actions, return 0.0
     if len(possibleActions) == 0:
-    	return 0.0
+      return 0.0
 
     "*** YOUR CODE HERE ***"
-    raise NotImplementedError
+    best_q = None
+    for action in possibleActions:
+      q = self.getQValue(state, action)
+      if best_q is None or best_q < q:
+        best_q = q
 
-    return 0.
+    return best_q
     
   def getPolicy(self, state):
     """
@@ -74,12 +78,15 @@ class QLearningAgent(ReinforcementAgent):
 
     #If there are no legal actions, return None
     if len(possibleActions) == 0:
-    	return None
+      return None
     
     best_action = None
-
-    "*** YOUR CODE HERE ***"
-    raise NotImplementedError
+    best_q = None
+    for action in possibleActions:
+      q = self.getQValue(state, action)
+      if best_q is None or best_q < q:
+        best_action = action
+        best_q = q
 
     return best_action
 
@@ -101,13 +108,15 @@ class QLearningAgent(ReinforcementAgent):
     
     #If there are no legal actions, return None
     if len(possibleActions) == 0:
-    	return None
+      return None
 
     #agent parameters:
     epsilon = self.epsilon
 
-    "*** YOUR CODE HERE ***"
-    raise NotImplementedError    
+    if random.random() < epsilon:
+      action = random.choice(possibleActions)
+    else:
+      action = self.getPolicy(state)
 
     return action
 
@@ -124,13 +133,10 @@ class QLearningAgent(ReinforcementAgent):
     gamma = self.discount
     learning_rate = self.alpha
     
-    "*** YOUR CODE HERE ***"
-    raise NotImplementedError
-    
-    reference_qvalue = PleaseImplementMe
-    updated_qvalue = PleaseImplementMe
+    reference_qvalue = self.getQValue(state, action)
+    updated_qvalue = reference_qvalue*(1-learning_rate) + learning_rate*(reward + gamma * self.getValue(nextState))
 
-    self.setQValue(PleaseImplementMe,PleaseImplementMe,updated_qvalue)
+    self.setQValue(state, action, updated_qvalue)
 
 
 #---------------------#end of your code#---------------------#
