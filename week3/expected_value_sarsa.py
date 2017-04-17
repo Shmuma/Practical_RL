@@ -74,7 +74,10 @@ class EVSarsaAgent():
     #You'll need this to estimate action probabilities
     epsilon = self.epsilon
     
-    value = <Your Code Here>
+    value = 0.0
+    for action in possibleActions:
+      value += self.getQValue(state, action)
+    value /= len(possibleActions)
     return value
     
   def getPolicy(self, state):
