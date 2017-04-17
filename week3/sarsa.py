@@ -119,7 +119,7 @@ class SarsaAgent():
     learning_rate = self.alpha
     
     "*** YOUR CODE HERE ***"    
-    reference_qvalue = <Your Code Here>
+    reference_qvalue = reward + gamma * self.getQValue(nextState, nextAction)
     
     updated_qvalue = (1-learning_rate) * self.getQValue(state,action) + learning_rate * reference_qvalue
     
