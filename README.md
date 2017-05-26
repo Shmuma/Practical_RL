@@ -24,6 +24,7 @@ Taught on-campus in [HSE](https://cs.hse.ru) and [Yandex SDA](https://yandexdata
 
 
 # Announcements
+* 17.05.16 - !ATTENTION ysda and hse students! - there's a suspicion that anytask sometimes fails to send homework assignments. Please check that all your assignments are sent (sometimes we receive empty submissions). We will binge-check all newly sent assignments so don't worry about timing. Also this is most likely us being over suspicious, we post this warning just in case.
 * 1.05.16 - UPD - week8 deadlines have been prolonged till the end of holidays
 * 22.04.16 - YSDA deadlines for week8 set to 30th of __april__ (previously 30 may, which was a typo).
 * 25.03.16 - __HSE important__ next monday lecture is postponed by 1 week due to HSE mid-term exams. Deadlines have been postponed accordingly.
@@ -140,8 +141,14 @@ Taught on-campus in [HSE](https://cs.hse.ru) and [Yandex SDA](https://yandexdata
 * __week 10__ Trust Region Policy Optimization.
   * Lecture: Trust region policy optimization in detail. NPO/TRPO.
   * Seminar: approximate TRPO vs approximate Q-learning for gym box2d envs (robotics-themed).
+     * HSE deadline _23.59 18.05.17_ (first & last submission)
+     * YSDA deadline _23.59 18.05.17_ (first & last submission)
 
-
+* __week 11__ Model-based RL: Planning
+  * Seminar: MCTS
+     * HSE deadline _23.59 18.05.17_ (first & last submission)
+     * YSDA deadline _23.59 18.05.17_ (first & last submission)
+  
 
 
 ## Future lectures:
